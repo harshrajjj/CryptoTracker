@@ -1,0 +1,161 @@
+/* Dark mode styles */
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+/* Force dark mode styles */
+:root.dark {
+  --bg-primary: #111827; /* gray-900 */
+  --text-primary: #f9fafb; /* gray-50 */
+  --bg-secondary: #1f2937; /* gray-800 */
+  --border-color: #374151; /* gray-700 */
+  --card-bg: #111827; /* gray-900 */
+  --card-header-bg: #0f172a; /* gray-950 */
+  --card-border: #374151; /* gray-700 */
+  --table-bg: #111827; /* gray-900 */
+  --table-header-bg: #0f172a; /* gray-950 */
+  --table-row-bg: #111827; /* gray-900 */
+  --table-row-hover: #1f2937; /* gray-800 */
+}
+
+:root {
+  --bg-primary: #ffffff; /* white */
+  --text-primary: #111827; /* gray-900 */
+  --bg-secondary: #ffffff; /* white */
+  --border-color: #e5e7eb; /* gray-200 */
+  --card-bg: #ffffff; /* white */
+  --card-header-bg: #f9fafb; /* gray-50 */
+  --card-border: #e5e7eb; /* gray-200 */
+  --table-bg: #ffffff; /* white */
+  --table-header-bg: #f9fafb; /* gray-50 */
+  --table-row-bg: #ffffff; /* white */
+  --table-row-hover: #f9fafb; /* gray-50 */
+}
+
+/* Apply variables to elements */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Force dark mode on all elements */
+.dark body,
+.dark .bg-white,
+.dark [class*="bg-gray-50"],
+.dark [class*="bg-gray-100"] {
+  background-color: var(--bg-primary) !important;
+}
+
+.dark .bg-gray-800,
+.dark [class*="bg-gray-700"],
+.dark [class*="bg-gray-800"],
+.dark [class*="bg-gray-900"] {
+  background-color: var(--bg-secondary) !important;
+}
+
+.dark .border-gray-200,
+.dark [class*="border-gray-100"],
+.dark [class*="border-gray-200"],
+.dark [class*="border-gray-300"] {
+  border-color: var(--border-color) !important;
+}
+
+.dark .text-gray-900,
+.dark [class*="text-gray-700"],
+.dark [class*="text-gray-800"],
+.dark [class*="text-gray-900"],
+.dark [class*="text-black"] {
+  color: var(--text-primary) !important;
+}
+
+/* Force dark mode on table elements */
+.dark table {
+  background-color: var(--table-bg) !important;
+  border-color: var(--card-border) !important;
+}
+
+.dark thead tr {
+  background-color: var(--table-header-bg) !important;
+  border-color: var(--card-border) !important;
+  background-image: none !important;
+}
+
+.dark tbody {
+  background-color: var(--table-row-bg) !important;
+}
+
+.dark tbody tr {
+  background-color: var(--table-row-bg) !important;
+  border-color: var(--card-border) !important;
+}
+
+.dark tbody tr:hover {
+  background-color: var(--table-row-hover) !important;
+}
+
+/* Force dark mode on table cells */
+.dark td, .dark th {
+  background-color: transparent !important;
+}
+
+/* Force dark mode on card elements */
+.dark .bg-gradient-to-br.from-white.to-gray-50 {
+  background-image: none !important;
+  background-color: var(--card-bg) !important;
+}
+
+/* Force dark mode on gradient backgrounds */
+.dark .bg-gradient-to-r.from-indigo-50.to-blue-50 {
+  background-image: none !important;
+  background-color: var(--card-bg) !important;
+}
+
+/* Force dark mode on filter controls */
+.dark .bg-white {
+  background-color: var(--card-bg) !important;
+}
+
+/* Force dark mode on all elements with light backgrounds */
+.dark [class*="bg-white"],
+.dark [class*="bg-gray-50"],
+.dark [class*="bg-gray-100"] {
+  background-color: var(--card-bg) !important;
+}
+
+/* Force dark mode on footer */
+.dark footer {
+  background-color: var(--card-bg) !important;
+}
+
+/* Force dark mode on select dropdowns */
+.dark select option {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+}
+
+/* Smooth hover effect for select options */
+.dark select option:hover,
+.dark select option:focus {
+  background-color: var(--table-row-hover) !important;
+}
+
+/* Custom select styling */
+select {
+  transition: all 0.2s ease;
+}
+
+select:focus + div svg {
+  transform: rotate(180deg);
+}
+
+/* Ensure all transitions are smooth */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}

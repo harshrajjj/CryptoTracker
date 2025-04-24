@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Price Tracker</title>
+    <!-- Preload dark mode script to prevent flash -->
+    <script src="/darkModeScript.js"></script>
+    <!-- Add dark mode class to html element if needed -->
+    <script>
+      // This ensures dark mode is applied before the page renders
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+        document.body.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+        document.documentElement.classList.add('light');
+        document.body.classList.remove('dark');
+      }
+    </script>
+    <style>
+      /* Immediate dark mode styles to prevent flash */
+      html.dark {
+        background-color: #111827;
+        color: #f9fafb;
+      }
+      html.dark body {
+        background-color: #111827;
+        color: #f9fafb;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
