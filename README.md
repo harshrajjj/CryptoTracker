@@ -3,7 +3,7 @@
 A real-time cryptocurrency price tracker built with React, Redux Toolkit, and Tailwind CSS. This application provides live updates of cryptocurrency prices, market data, and interactive charts.
 
 <div align="center">
-  <img src="https://github.com/harshrajjj/CryptoTracker/Client/demo/demo.gif" alt="Crypto Tracker Demo" width="800px" />
+  <img src="Client/demo/demo.gif" alt="Crypto Tracker Demo" width="800px" />
 
   *Live cryptocurrency tracking with real-time updates and interactive charts*
 
