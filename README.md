@@ -7,12 +7,12 @@ A real-time cryptocurrency price tracker built with React, Redux Toolkit, and Ta
 
   *Live cryptocurrency tracking with real-time updates and interactive charts*
 
-  [View Live Demo](https://crypto-tracker-demo.vercel.app/) | [Watch Demo Video](https://youtu.be/your-demo-video-id)
+  [View Live Demo](https://crypto-tracker-opal-nine.vercel.app/) 
 </div>
 
 ## 🚀 Demo
 
-You can view a live demo of the application at: [https://crypto-tracker-demo.vercel.app/](https://crypto-tracker-demo.vercel.app/)
+You can view a live demo of the application at: [https://crypto-tracker-opal-nine.vercel.app/](https://crypto-tracker-opal-nine.vercel.app/)
 
 ### Demo Credentials
 - No login required! The application uses public cryptocurrency data.
@@ -84,7 +84,7 @@ You can view a live demo of the application at: [https://crypto-tracker-demo.ver
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/crypto-tracker.git
+   git clone https://github.com/harshrajjj/crypto-tracker.git
    cd crypto-tracker/Client
    ```
 
@@ -283,6 +283,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or feedback, please reach out:
 
-- **GitHub Issues**: [Open an issue](https://github.com/yourusername/crypto-tracker/issues)
-- **Email**: your.email@example.com
-- **Twitter**: [@yourusername](https://twitter.com/yourusername)
+- **GitHub Issues**: [Open an issue](https://github.com/harshrajj/crypto-tracker/issues)
+- **Email**: harshbhagat583@gmail.com
+
